@@ -34,7 +34,7 @@ main {
 
 .formulario__input {
 	width: 100%;
-	background: rgb(255, 255, 255);
+	background: #fff;
 	border: 3px solid transparent;
 	border-radius: 3px;
 	height: 45px;
@@ -44,9 +44,9 @@ main {
 }
 
 .formulario__input:focus {
-	border: 3px solid #2dee06;
+	border: 3px solid #0075FF;
 	outline: none;
-	box-shadow: 3px 0px 30px rgba(228, 1, 12, 0.4);
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
 }
 
 .formulario__input-error {
@@ -115,7 +115,7 @@ main {
 }
 
 .formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgb(233, 5, 5);
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
 }
 
 .formulario__mensaje-exito {

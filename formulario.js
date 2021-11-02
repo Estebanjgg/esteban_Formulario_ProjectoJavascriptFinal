@@ -9,15 +9,43 @@ const expresiones = {
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
 
-const validarFormulario = () => {
-	
+const validarFormulario = (e) => {
+	switch (e.target.name){
+		case "usuario":
+             if(expresiones.usuario.test(e.target.value)){
+				document.getElementById('grupo__usuario').classList.remove('formulario__grupo-incorrecto');
+				document.getElementById('grupo__usuario').classList.add('formulario__grupo-correcto');
+				document.querySelector('#grupo__usuario i').classList.add('fa-check-circle');
+				document.querySelector('#grupo__usuario i').classList.remove('fa-times-circle');
+			 } else{
+				 document.getElementById('grupo__usuario').classList.add('formulario__grupo-incorrecto');
+				 document.getElementById('grupo__usuario').classList.remove('formulario__grupo-correcto');
+				 document.querySelector('#grupo__usuario i').classList.add('fa-times-circle');
+				 document.querySelector('#grupo__usuario i').classList.remove('fa-check-circle');
+			 }
+		break;
+		case "nome":
+
+		break;
+		case "password":
+
+		break;
+		case "password2":
+
+		break;
+		case "correo":
+
+		break;
+		case "telefono":
+
+		break;
+	}
 }
 
 
 inputs.forEach((input) => {
-	input.addEventListener('keyup', () =>{
-		console.log('tecla levantada');
-	});
+	input.addEventListener('keyup', validarFormulario )
+	input.addEventListener('blur', validarFormulario )
 });
 
 formulario.addEventListener('sbmit', (e) => {
