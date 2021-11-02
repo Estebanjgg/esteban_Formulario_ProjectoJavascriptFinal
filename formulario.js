@@ -8,3 +8,19 @@ const expresiones = {
 	correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
 	telefono: /^\d{7,14}$/ // 7 a 14 numeros.
 }
+
+const validarFormulario = () => {
+	
+}
+
+
+inputs.forEach((input) => {
+	input.addEventListener('keyup', () =>{
+		console.log('tecla levantada');
+	});
+});
+
+formulario.addEventListener('sbmit', (e) => {
+	e.preventDefault();
+});
+
