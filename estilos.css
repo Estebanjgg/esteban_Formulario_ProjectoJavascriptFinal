@@ -5,7 +5,11 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url( https://www.publiink.com/wp-content/uploads/2016/05/fondo-formulario-fullpage.png);
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0FXvnB8d8VZ9DRnUWDrG2SwV3BQN4TM9dzg&usqp=CAU);
+
+	background-repeat: no-repeat;
+	background-size: 150%;
+	
 }
 
 main {
@@ -44,9 +48,9 @@ main {
 }
 
 .formulario__input:focus {
-	border: 3px solid #0075FF;
+	border: 3px solid #7bff00;
 	outline: none;
-	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+	box-shadow: 3px 0px 30px rgba(221, 7, 7, 0.4);
 }
 
 .formulario__input-error {
@@ -81,7 +85,7 @@ main {
 .formulario__mensaje {
 	height: 45px;
 	line-height: 45px;
-	background: #F66060;
+	background: #d5ec05;
 	padding: 0 15px;
 	border-radius: 3px;
 	display: none;
@@ -93,6 +97,7 @@ main {
 
 .formulario__mensaje p {
 	margin: 0;
+	color: #f000f8;
 }
 
 .formulario__grupo-btn-enviar {
@@ -115,13 +120,14 @@ main {
 }
 
 .formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+	box-shadow: 3px 0px 30px rgb(253, 7, 7);
 }
 
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
+	font-size: 19px;
+	color: #eeffaf;
 	display: none;
+	
 }
 
 .formulario__mensaje-exito-activo {
