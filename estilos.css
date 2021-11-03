@@ -5,11 +5,9 @@
 
 body {
 	font-family: 'Roboto', sans-serif;
-	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0FXvnB8d8VZ9DRnUWDrG2SwV3BQN4TM9dzg&usqp=CAU);
-
-	background-repeat: no-repeat;
-	background-size: 150%;
-	
+	background-image: url(https://venturasystems.tech/wp-content/uploads/2021/05/El-papel-del-ethical-hacking-para-combatir-la-cibercriminalidad.jpeg);
+background-repeat: no-repeat;
+background-size: 120%;
 }
 
 main {
@@ -23,6 +21,7 @@ main {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	gap: 20px;
+	color: #eeffaf;
 }
 
 .formulario__label {
@@ -50,7 +49,7 @@ main {
 .formulario__input:focus {
 	border: 3px solid #7bff00;
 	outline: none;
-	box-shadow: 3px 0px 30px rgba(221, 7, 7, 0.4);
+	box-shadow: 3px 0px 30px rgba(234, 238, 0, 0.911);
 }
 
 .formulario__input-error {
@@ -120,7 +119,7 @@ main {
 }
 
 .formulario__btn:hover {
-	box-shadow: 3px 0px 30px rgb(253, 7, 7);
+	box-shadow: 3px 0px 30px rgb(216, 253, 7);
 }
 
 .formulario__mensaje-exito {

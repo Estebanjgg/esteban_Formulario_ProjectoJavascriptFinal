@@ -1,6 +1,8 @@
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+//eferencia de sintaxis de expresiones regulares
+
 const expresiones = {
 	usuario: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -41,6 +43,7 @@ const validarFormulario = (e) => {
 		break;
 	}
 }
+ // validacion de grupos de input para que cuando de un clip aparesca en error que tiene que terminar el formulario , es importante de crear un valued de campo que encierre todos los input
 
 const validarCampo = (expresion, input, campo) => {
 	if(expresion.test(input.value)){
@@ -60,6 +63,7 @@ const validarCampo = (expresion, input, campo) => {
 	}
 }
 
+//validacion de el campo contraseña para que las dos coincidan 
 
 const validaPssword2 = () =>{
 	const inputPassword1 = document.getElementById('password');
@@ -83,6 +87,7 @@ const validaPssword2 = () =>{
 		campos['password'] = true;
 	}
 }
+//validando boton 
 
 inputs.forEach((input) => {
 	input.addEventListener('keyup', validarFormulario);
